@@ -1,3 +1,102 @@
-body {
+@font-face {
+    src: url('../edureka_module4_assignment/RobotoMono-BoldItalic.ttf');
+    font-family: 'Roboto';
+}
+
+.para1 {
+    font-family: 'Roboto';
+}
+
+h1 {
     text-shadow: 1px 1px 5px red;
+}
+
+.car {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.dog {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.croc {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.cat {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.tree {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+/*
+.house:hover {
+    -webkit-transform: rotateY(30deg);
+    -moz-transform: rotateY(30deg);
+    -ms-transform: rotateY(30deg);
+    -o-transform: rotateY(30deg);
+    -webkit-transition: width 7s height 7s;
+    -moz-transition: width 7s height 7s;
+    -ms-transition: width 7s height 7s;
+    -o-transition: width 7s height 7s;
+    transform: rotateY(30deg);
+    transition: width 7s height 7s;
+}
+*/
+
+.house {
+    animation: house-animation 3s infinite;
+    -webkit-animation: house-animation 3s infinite;
+}
+
+@keyframes house-animation {
+    0% {
+        transform: rotateY(0);
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+        -o-transform: rotateY(0);
+    }
+    50% {
+        transform: rotateY(30deg);
+        -webkit-transform: rotateY(30deg);
+        -moz-transform: rotateY(30deg);
+        -ms-transform: rotateY(30deg);
+        -o-transform: rotateY(30deg);
+    }
+    100% {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+}
+
+.para2 {
+    column-count: 4;
+    -webkit-column-rule-width: 40px;
+    column-rule-width: 40px;
 }
